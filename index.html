@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <section class="info">
+      <div class="info-box">
+        <h1>Learn to code by watching others</h1>
+    
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+      </div>
+    </section>
+    
+      <section class="wrapper-form">
+        <div class="price">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+
+      <form id="form">
+        <div class="form-box">
+          <input 
+            class="firstName"
+            name="firstName" 
+            type="text" 
+            placeholder="First Name"
+          >
+          <img src="./images/icon-error.svg" alt="Icon Error">
+          <span></span>
+        </div>
+        <div class="form-box">
+          <input 
+            class="lastName"
+            name="lastName" 
+            type="text" 
+            placeholder="Last Name"
+          >
+          <img src="./images/icon-error.svg" alt="Icon Error">
+          <span></span>
+          </div>
+          <div class="form-box">
+            <input 
+              class="email"
+              name="email"  
+              type="text" 
+              placeholder="Email Address"
+            >
+            <img src="./images/icon-error.svg" alt="Icon Error">
+            <span></span>
+          </div>
+          <div class="form-box">
+            <input 
+              class="password"
+              name="password"  
+              type="password" 
+              placeholder="Password"
+            >
+            <img src="./images/icon-error.svg" alt="Icon Error">
+            <span></span>
+          </div>
+
+          <button class="submit" type="submit">Claim your free trial </button>
+
+          <div class="terms-text">
+            <small>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></small>
+          </div>
+        </form>
+    </section>
+  </main>
+
+  <script src="./scripts/app.js"></script>
+</body>
+</html>

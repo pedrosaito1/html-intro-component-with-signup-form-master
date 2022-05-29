@@ -1,0 +1,210 @@
+html {
+    width: 100%;
+    font-size: 16px;
+}
+
+main {
+    width: 100%;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(../images/bg-intro-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .info-box {
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    color: #FFF;
+}
+
+.info .info-box h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.info .info-box p {
+    font-weight: 400;
+}
+
+.wrapper-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.wrapper-form .price {
+    padding: 20px 70px;
+    margin-bottom: 25px;
+    color: #FFF;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    box-shadow: 0 8px 2px 0px hsla(249, 10%, 26%, 0.3)
+}
+
+.wrapper-form .price span {
+    font-weight: 600;
+}
+
+.wrapper-form form {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.wrapper-form form .form-box {
+    position: relative;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+    margin-bottom: 20px;
+}
+
+.form-box.error input {
+    margin-bottom: 30px;
+    border: 2px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
+.form-box img {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.form-box.error img {
+    visibility: visible;
+}
+
+.form-box span {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.form-box.error span {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    font-weight: 500;
+    visibility: visible;
+}
+
+.wrapper-form form .submit {
+    padding: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #FFF;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 2px 0px hsl(154, 74%, 44%);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.wrapper-form form .submit:hover {
+    background-color: hsl(154, 71%, 59%);
+}
+
+.wrapper-form form .terms-text {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.548);
+    font-weight: 400;
+}
+
+.wrapper-form form .terms-text a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 510px) {
+    main {
+        background-image: url(../images/bg-intro-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .info .info-box {
+        padding-bottom: 50px;
+    }
+
+    .info .info-box p {
+        padding: 0 80px;
+    }
+
+    .info-box .info-price {
+        padding: 20px 98px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        flex-direction: row;
+        padding: 0 100px;
+    }
+
+    .info {
+        width: 50%;
+    }
+
+    .info .info-box {
+        text-align: left;
+        padding: 0;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .info .info-box h1 {
+        font-size: 55px;
+        
+    }
+
+    .info .info-box p {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .wrapper-form {
+        align-items: center;
+        width: 50%;
+        margin: 0;
+    }
+
+    .wrapper-form form,
+    .wrapper-form .price {
+        width: 560px;
+    }
+}
